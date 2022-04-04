@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-portfolio/static/css/main.d80ad5c5.css",
+    "main.js": "/React-portfolio/static/js/main.368e8daf.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profile-pic.png": "/React-portfolio/static/media/profile-pic.fe186e83c1a9d6d0cc4d.png",
+    "static/media/Poppins-Thin.ttf": "/React-portfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
+    "static/media/Poppins-Light.ttf": "/React-portfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
+    "static/media/Poppins-Regular.ttf": "/React-portfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/React-portfolio/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/React-portfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/Poppins-Bold.ttf": "/React-portfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/React-portfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "static/media/bg.jpg": "/React-portfolio/static/media/bg.9be4dda3e6c6bd5b5e71.jpg",
+    "index.html": "/React-portfolio/index.html",
+    "main.d80ad5c5.css.map": "/React-portfolio/static/css/main.d80ad5c5.css.map",
+    "main.368e8daf.js.map": "/React-portfolio/static/js/main.368e8daf.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d80ad5c5.css",
+    "static/js/main.368e8daf.js"
+  ]
+}
