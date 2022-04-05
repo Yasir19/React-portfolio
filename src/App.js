@@ -1,12 +1,45 @@
-import React from 'react';
-import Home from './components/Home'
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Feader from "./components/Feader";
+import Nav from "./components/Nav";
 
-import './App.css';
+
 function App() {
+  const [screens] = useState([
+    {
+      name:"about me"
+    },
+    {
+      name:'project'
+    },
+    {
+      name:'contact me'
+    },
+    {
+      name: 'resume'
+    }
+  ]);
+  const [currentScreen, setCurrentScreen] = useState(screens[0])
+
   return (
-    <div className='App'>
-      <Home />
+    <div>
+      <Header>
+        <Nav
+        screens={screens}
+        setCurrentScreen={setCurrentScreen}
+        currentScreen={currentScreen}
+        ></Nav>
+
+      </Header>
+      <main>
+        <Feader currentScreen={currentScreen}></Feader>
+      
+      </main>
+      <Footer />
+   
     </div>
+   
   );
 }
 

@@ -1,11 +1,12 @@
-import React from "react";
+import React from'react'
 
+function Header(props){
+    return(
+    <header className="flex-row space-between py-2 mx-2">
+        <h1>Yasir Habboo</h1>
+        {props.children}
 
-const Header = () => {
-    return (
-        <div className="bg-secondary mb-4 py-2 flex-row align-center">
-
-        </div>
+    </header>
     )
 }
 export default Header
