@@ -1,6 +1,4 @@
-
-   
-main {
+  main {
   margin: 0 auto;
   max-width: 90%;
   padding: 50px 30px;
@@ -42,10 +40,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3{
   font-family: 'Aladin', cursive;
   font-weight: 500;
   margin: 5px 0;
@@ -67,11 +62,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 h6 {
@@ -101,6 +96,9 @@ header {
 
 header a {
   color: var(--light);
+}
+.NavItem{
+  padding: 42px
 }
 
 button {
@@ -166,6 +164,10 @@ label {
 
 li {
   list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+
+
 }
 
 header {
@@ -189,22 +191,6 @@ header img {
   filter: sepia(1) opacity(60%);
 }
 
-nav {
-  position: relative;
-  font-family: 'Aladin', cursive;
-  font-size: 2.5rem;
-  margin: 30px 20px;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav li {
-  cursor: pointer;
-  text-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
-  margin: 0 50px;
-}
 
 ul.skills {
   line-height: 2rem;
@@ -248,6 +234,8 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .space-between {
@@ -256,7 +244,10 @@ textarea {
 
 .flex-end {
   justify-content: flex-end;
+  border-right: solid 3px;
+  padding: 0 80px 0 0;
 }
+
 
 .flex-center {
   justify-content: center;
@@ -328,18 +319,32 @@ textarea {
   height: 100%;
 }
 
-.project-info {
-    color: var(--secondary);
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    background-color: #cccccc;
-    text-align: left;
+.project-text {
+  color: var(--secondary);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 50px;
+  z-index: 900;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
 }
 
-.project-info h3 {
-  font-size: 1.3rem;
-
+.project-text h3 {
+  font-size: 2.5rem;
+}
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
 }
 
 .project-info a {
@@ -375,3 +380,111 @@ textarea {
   background-color: rgb(239, 172, 28);
   color: black;
 }
+
+.subNav{
+  border-bottom:white solid 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.resume-container{
+  justify-content: space-around;
+  padding: 10px 25px;
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 15px;
+  width: 90vw;
+  margin: 10px 0;
+  display: flex;
+}
+
+@media screen and (max-width:1100px){
+ header h1{
+   font-size: 3.5vw;
+   margin: 50px 0px 0 0px;
+  }
+}
+@media screen and (max-width:1000px){
+  header h1{
+    font-size: 3.0vw;
+    margin: 45px 0px 0 0px;
+   }
+   .NavItem{
+    padding: 35px;
+  }
+
+}
+@media screen and (max-width:900px){
+  header h1{
+    font-size: 3.0vw;
+    margin-top: 40px;
+   }
+   .NavItem{
+     padding: 30px;
+   }
+
+}
+@media screen and (max-width:810px){
+  header h1{
+    font-size: 3.0vw;
+    margin-top: 35px;
+   }
+   .NavItem{
+    padding: 20px;
+  }
+
+}
+@media screen and (max-width:729px){
+  header h1{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 250px;
+   }
+   .NavItem{
+    padding: 30px;
+  }
+}
+@media screen and (max-width:671px){
+  header h1{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 230px;
+   }
+   .NavItem{
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width:600px){
+  header h1{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 200px;
+   }
+   .NavItem{
+    padding: 20px;
+  }
+}
+@media screen and (max-width:550px){
+  header h1{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 160px;
+   }
+   .NavItem{
+    padding: 20px;
+  }
+}
+@media screen and (max-width:414px){
+  header h1{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 25%;
+   }
+}
+
+
+
+

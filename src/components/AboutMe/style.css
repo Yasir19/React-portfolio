@@ -87,14 +87,19 @@
  
        
    }
-   @media screen and (max-width:910px){
+   @media screen and (max-width:1100px){
     .profile-picture{
         height: 320px;
         width: 320px;
         margin: 0 0 0 4px;
     }
     .profile-details-name{
-        margin: 10px 20px 0 0;
+        margin: 40px 5px 0 0;
+    }
+    h2{
+        display: flex;
+       justify-content: center;
+       margin-right: 160px;
     }
 
 
@@ -117,6 +122,12 @@
     .profile-options,
     .profile-details-role{
         text-align: center;
+    }
+    h2{
+        display: flex;
+       justify-content: center;
+       margin-right: 30px;
+   
     }
 
 

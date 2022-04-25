@@ -15,7 +15,7 @@ function Nav(props) {
         <nav>
             <ul className='flex-row'>
                 {screens.map(Screen =>(
-                    <li className={`my-2 py-2 mx-2 ${currentScreen.name === Screen.name && 'navActive'}`}
+                    <li className={`NavItem ${currentScreen.name === Screen.name && 'navActive'}`}
                     key ={Screen.name}
                     >
                         <span onClick={() =>setCurrentScreen(Screen)}

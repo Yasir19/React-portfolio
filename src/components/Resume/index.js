@@ -1,10 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
+import SubNav from "../SubNav/SubNav";
+import SubFeader from "../SubFeader/SubFeader";
+
 
 
 function Resume() {
+  const [pages] = useState([
+    {
+      name:"Work History"
+    },
+    {
+      name:"Education"
+    }, 
+    {
+      name:"Projects"
+
+    }
+  ]);
+  const [currentPage, setCurrentPage] = useState(pages[0])
   return (
     <section className="my-5">
       <div className="my-2">
+        <SubNav
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        />
+        <SubFeader currentPage={currentPage}/>
+
         <p>
           
           <a href="assets/Yasir-Habboo-resume-c1.docx"
@@ -13,27 +36,6 @@ function Resume() {
           <button>Get Resume</button>
           </a>
         </p>
-        <h3>Front-end Skills</h3>
-        <ul className="skills">
-            <li>JavaScript</li>
-            <li> React</li>
-            <li>CSS</li>
-            <li>BootStrap</li>
-        </ul>
-        <h3>Back-end Skills</h3>
-        <ul className="skills">
-        <li>JavaScript</li>
-            <li> Node</li>
-            <li>Express</li>
-            <li>MySQL</li>
-            <li> Sequelize</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li> APIs</li>
-            <li>RESTful</li>
-            <li>GraphQL</li>
-            </ul>
-
       </div>
     </section>
   );

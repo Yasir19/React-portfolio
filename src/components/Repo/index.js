@@ -10,7 +10,7 @@ function Repo({ project }) {
         alt={removeHyphensAndCapitalize(name)}
         className="project-bg"
       />
-      <div className="project-info">
+      <div className="project-text">
         <h3>
           <i className="fa fa-github"></i>
           <a href={url}>{removeHyphensAndCapitalize(name)}</a>{" "}
